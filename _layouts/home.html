@@ -2,31 +2,12 @@
 layout: default
 ---
 <section class="hero hero-bkg-animated is-fullheight is-default is-bold">
-  <div class="hero-head">
-    {% include navigation.html %}
-  </div>
+  
   <div class="hero-body">
     <div class="container has-text-centered">
-      <div class="columns is-vcentered">
-        <div class="column is-5">
+      <div class="columns is-vcentered is-centered">
+        <div class="column is-half">
           <img src="assets/images/grin_mw_distort.svg" alt="Description">
-        </div>
-        <div class="column is-6 is-offset-1">
-          <br><h1 class="title is-2" style="margin-bottom: 2rem;">
-            Meet Grin
-          </h1>
-          <h2 class="subtitle is-3">
-            the private & scalable<br> mimblewimble blockchain 
-          </h2>
-          <br>
-          <p class="has-text-centered" style="margin-top: -1rem;">
-          <a href="https://github.com/mimblewimble/grin/blob/master/doc/intro.md" class="button is-medium is-warning is-outlined">
-            What's Mimblewimble?
-          </a>
-          <a href="https://github.com/mimblewimble/grin" class="button is-medium is-warning is-outlined">
-            <i class="fab fa-github"></i>
-          </a>
-          </p>
         </div>
       </div>
     </div>
@@ -35,13 +16,10 @@ layout: default
   <div class="hero-foot">
     <!-- CTA BOX -->
     <div class="box cta">
-      <p class="has-text-centered">
-      <span class="tag is-warning">
+      <p class="has-text-right">
+      <span class="tag testnet-box">
         Currently Live: Testnet 4
       </span> 
-      <span href="#" style="margin-left: 10px;">
-        Grin is under development. Launch planned for early 2019.
-      </span>
       </p>
     </div>
     <!-- // CTA BOX -->
@@ -52,8 +30,8 @@ layout: default
 <!-- BODY -->
 <section class="section">
   <div class="container">
-    <div class="columns">
-      <div class="column is-10 is-offset-1">
+    <div class="columns is-centered">
+      <div class="column is-10">
         <div class="content">
 
           <!-- HEADER -->
@@ -69,8 +47,6 @@ layout: default
             </p>
           </section>
           <!-- //HEADER  -->
-
-          <br><br>
 
           <!-- DESCRIPTION DOTS -->
           <section class="columns dots">
@@ -113,24 +89,26 @@ layout: default
             </div>
             <!-- //DOT -->
           </section>
-          <!-- //DESCRIPTION DOTS -->
-
-          <br><br>              
+          <!-- //DESCRIPTION DOTS -->         
 
           <!-- FUNDING -->
-          <section>
-            <h1 class="title is-1">
+          <section class="funding">
+            <h1 class="title">
               Funding
             </h1>
-            <p class="subtitle is-4">
-            Grin is launched fairly, free of ICO, pre-mine or founder’s reward. We rely on donations to keep working on the project. Support the movement by purchasing some swag or making a donation.
-            </p><br>
-            <a href="funding" class="button is-warning is-large" style="float: right;">Donate Now</a>
-            <a href="#" class="button is-info is-outlined is-large"><img src="assets/images/hat.png" style="height: 8rem;">Buy Swag</a>
-          </section><br><br>
+            <h2 class="subtitle">
+            Grin is launched fairly, free of ICO, pre-mine or founder’s reward.
+            </h2>
+            <p class="has-bottom-space-1">
+              We rely on donations to keep working on the project. Support the movement by purchasing some swag or making a donation.
+            </p>
+            <br />
+            <div class="columns">
+              <div class="column is-half"><a href="funding" class="button is-warning is-large is-pulled-left" style="float: right;">Donate Now</a></div>
+              <div class="column is-half"><a href="#" class="button is-info is-outlined is-large is-pulled-right"><img src="assets/images/hat.png" style="height: 8rem;">Buy Swag</a></div>
+            </div>
+          </section>
           <!-- //FUNDING -->
-
-          <br><br>  
 
           <!-- PATRONS -->
           <section class="patron">
@@ -139,16 +117,11 @@ layout: default
             </h1>
 
             <p>
-            If you’re an individual, company or institution excited about the potential of Grin or MimbleWimble, we humbly ask if you’d consider making a financial contribution to the project’s development. We’re experimenting with a <a href="http://grin-tech.org/funding.html">100% community-driven funding model</a>.
+            If you’re an individual, company or institution excited about the potential of Grin or MimbleWimble, we humbly ask if you’d consider making a financial contribution to the project’s development. We’re experimenting with a <a href="http://grin-tech.org/funding.html">100% community-driven funding model</a>. Thank you to all our contributors; public, private and anonymous!
             </p>
 
-            <br><br>
-
             <!-- COMPANY PATRONS -->
-            <div>
-              <h2 class="subtitle">
-                Companies
-              </h2>
+            <div id="patron-logos">
 
               <!-- SPONSOR ROW 1 -->
               <div class="level is-vcentered">
@@ -177,7 +150,7 @@ layout: default
 
 
               <!-- SPONSOR ROW 2 -->
-              <div class="level is-vcentered">
+              <div class="level is-vcentered has-space ">
                 <div class="level-item">
                   <a href="#">
                     <img src="assets/images/patron/kr1_med.png">
@@ -198,14 +171,8 @@ layout: default
             </div>
             <!-- //COMPANY PATRONS -->
 
-
-
             <!-- PRIVATE PATRONS -->
             <div>
-              <h2 class="subtitle has-top-space">
-                Private Funding Contributors
-              </h2>
-
               <!-- SPONSOR ROW 3 -->
               <div class="level is-vcentered names">
                 <div class="level-item">
@@ -267,19 +234,6 @@ layout: default
               <!-- //SPONSOR ROW 3 -->
             </div>
             <!-- //PRIVATE PATRONS -->
-
-            <!-- ANON PATRONS -->
-            <div>
-              <h2 class="subtitle has-top-space">
-                Anonymous Funding Contributors
-              </h2>
-              <p>
-              And all our great anonymous supporters! We’re not forgetting your contribution, and are working to protect that choice!
-              </p>
-            </div>
-            <!-- //ANON PATRONS -->
-          </section>
-          <!-- //PATRONS -->
 
         </div>
       </div>
